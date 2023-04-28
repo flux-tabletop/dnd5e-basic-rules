@@ -7,7 +7,10 @@ spell name="Antipathy/Sympathy" {
 	range 60
 	component "Verbal"
 	component "Somatic"
-	component "Material" "either a lump of alum soaked in vinegar for the antipathy effect or a drop of honey for the sympathy effect"
+	component "Material" {
+		item "Lump of Alum soaked in Vinegar (Antipathy)"
+		item "Drop of Honey (Sympathy)"
+	}
 	duration "Days" 10
 	check "SavingThrow" (Ability)"Wisdom"
 	description "This spell attracts or repels creatures of your choice. You target something within range, either a Huge or smaller object or creature or an area that is no larger than a 200-foot cube. Then specify a kind of intelligent creature, such as red dragons, goblins, or vampires. You invest the target with an aura that either attracts or repels the specified creatures for the duration. Choose antipathy or sympathy as the aura's effect."
